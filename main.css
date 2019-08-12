@@ -1,0 +1,17 @@
+#locations, #weather {
+    float:left;
+    padding:20px;
+    margin:20px;
+    border: solid 1px #000;
+    border-radius: 5px;
+    width:200px;
+    min-height:210px;
+}
+
+#jer, #par, #sto, #ber {
+    padding:10px;
+    margin:10px;
+    border: solid 1px rgb(0, 173, 136);
+    border-radius: 5px;
+    background-color: aquamarine;
+}

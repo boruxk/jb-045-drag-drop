@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doc</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+
+<body>
+<div id='locations'>
+    <div id="jer" draggable="true" ondragstart="return dragStart(event)">Jerusalem</div>
+    <div id="par" draggable="true" ondragstart="return dragStart(event)">Paris</div>
+    <div id="sto" draggable="true" ondragstart="return dragStart(event)">Stockholm</div>
+    <div id="ber" draggable="true" ondragstart="return dragStart(event)">Berlin</div>
+</div>
+<div id='weather' ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
