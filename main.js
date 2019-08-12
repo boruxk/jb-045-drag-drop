@@ -39,15 +39,19 @@ function sendToWeather(selectedCity) {
         console.log(obj);
         if (jer.parentNode == weather) {
           jer.innerHTML = '<div id="jer">' + obj.name + ': ' + obj.main.temp + '<div>';
+          document.getElementById("jer").removeAttribute("draggable");
           document.getElementById("jer").removeAttribute("id");
         } else if (par.parentNode == weather) {
           par.innerHTML = '<div id="par">' + obj.name + ': ' + obj.main.temp + '<div>';
+          document.getElementById("par").removeAttribute("draggable");
           document.getElementById("par").removeAttribute("id");
         } else if (sto.parentNode == weather) {
           sto.innerHTML = '<div id="sto">' + obj.name + ': ' + obj.main.temp + '<div>';
+          document.getElementById("sto").removeAttribute("draggable");
           document.getElementById("sto").removeAttribute("id");
         } else if (ber.parentNode == weather) {
           ber.innerHTML = '<div id="ber">' + obj.name + ': ' + obj.main.temp + '<div>';
+          document.getElementById("ber").removeAttribute("draggable");
           document.getElementById("ber").removeAttribute("id");
         }
       }
