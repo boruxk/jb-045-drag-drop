@@ -6,15 +6,15 @@ function dragStart(ev) {
   return true;
 }
 function dragEnter(ev) {
-  event.preventDefault();
+  ev.preventDefault();
   return true;
 }
 function dragOver(ev) {
   return false;
 }
-function dragDrop(ev) {
+function dragDrop(ev, el) {
   var src = ev.dataTransfer.getData("Text");
-  ev.target.appendChild(document.getElementById(src));
+  el.appendChild(document.getElementById(src));
   ev.stopPropagation();
   if (jer.parentNode == weather) {
     sendToWeather('jerusalem');

@@ -15,7 +15,7 @@
     <div id="sto" draggable="true" ondragstart="return dragStart(event)">Stockholm</div>
     <div id="ber" draggable="true" ondragstart="return dragStart(event)">Berlin</div>
 </div>
-<div id='weather' ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"></div>
+<div id='weather' ondragenter="return dragEnter(event)" ondrop="return dragDrop(event, this)" ondragover="return dragOver(event)"></div>
 
 <script src="main.js"></script>
 
